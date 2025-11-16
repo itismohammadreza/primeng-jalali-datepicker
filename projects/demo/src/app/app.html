@@ -1,0 +1,16 @@
+<div class="demo">
+  <h2>Primeng Jalali Datepicker Demo</h2>
+
+  <div class="controls">
+    <div class="checkbox-wrapper">
+      <p-checkbox inputId="is-jalali" [binary]="true" (onChange)="onJalaliChange($event)"/>
+      <label for="is-jalali"> isJalali </label>
+    </div>
+    <p-button text label="set a {{isJalali ? 'jalali' : 'gregorian'}} default date" (onClick)="onSetDefaultValue()"/>
+  </div>
+
+  <p-jalali-datepicker (onSelect)="onDateChange($event)" [(ngModel)]="defaultValue" [isJalali]="isJalali"/>
+  <p>Selected Date: {{ selectedValue | json }}</p>
+</div>
+
+<p><a target="_blank" href="https://github.com/itismohammadreza/primeng-jalali-datepicker">Github</a> repository</p>

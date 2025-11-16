@@ -1,0 +1,47 @@
+{
+  "name": "primeng-jalali-datepicker",
+  "version": "0.0.3",
+  "description": "A Jalali (Persian) datepicker based on PrimeNG DatePicker, adapted for Persian calendar",
+  "author": "Mohammadreza Shahbazi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itismohammadreza/primeng-jalali-datepicker"
+  },
+  "keywords": [
+    "angular",
+    "primeng",
+    "datepicker",
+    "jalali",
+    "persian",
+    "calendar"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0",
+    "@angular/forms": "^20.0.0",
+    "primeng": "^20.0.0",
+    "primeicons": "^7.0.0",
+  },
+  "dependencies": {
+    "jalali-moment": "^3.3.11"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "esm": "./fesm2022/primeng-jalali-datepicker.mjs",
+      "default": "./fesm2022/primeng-jalali-datepicker.mjs"
+    }
+  },
+  "types": "./index.d.ts",
+  "module": "./fesm2022/primeng-jalali-datepicker.mjs",
+  "sideEffects": false,
+  "files": [
+    "fesm2022",
+    "index.d.ts",
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ]
+}
