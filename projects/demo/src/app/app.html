@@ -3,7 +3,7 @@
 
   <div class="controls">
     <div class="checkbox-wrapper">
-      <p-checkbox inputId="is-jalali" [binary]="true" (onChange)="onJalaliChange($event)"/>
+      <p-checkbox inputId="is-jalali" [binary]="true" [ngModel]="isJalali" (onChange)="onJalaliChange($event)"/>
       <label for="is-jalali"> isJalali </label>
     </div>
     <p-button text label="set a {{isJalali ? 'jalali' : 'gregorian'}} default date" (onClick)="onSetDefaultValue()"/>

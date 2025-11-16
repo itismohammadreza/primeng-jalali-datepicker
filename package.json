@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build-lib": "ng build primeng-jalali-datepicker && node copy-licenses.js",
     "release": "node release.js",
+    "serve-demo": "ng serve --project demo --port 4445 -o",
     "deploy-demo": "ng build --project demo --configuration production && gh-pages -d dist/demo/browser"
   },
   "prettier": {
