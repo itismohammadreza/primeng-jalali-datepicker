@@ -1,6 +1,6 @@
 {
   "name": "primeng-jalali-datepicker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Jalali (Persian) datepicker based on PrimeNG DatePicker, adapted for Persian calendar",
   "author": "Mohammadreza Shahbazi",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "@angular/core": "^20.0.0",
     "@angular/forms": "^20.0.0",
     "primeng": "^20.0.0",
-    "primeicons": "^7.0.0",
+    "primeicons": "^7.0.0"
   },
   "dependencies": {
     "jalali-moment": "^3.3.11"
