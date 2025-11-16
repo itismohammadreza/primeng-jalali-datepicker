@@ -1,59 +1,90 @@
-# PrimengJalaliDatepicker
+# primeng-jalali-datepicker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.1.
+A Jalali (Persian) datepicker for Angular based on PrimeNG DatePicker, fully adapted to the Persian calendar.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Fully compatible with Angular 20+ and PrimeNG 20+
+- Persian (Jalali) calendar support
+- Easy to integrate into existing Angular projects
+- Supports forms with ReactiveFormsModule or Template-driven Forms
+- Customizable styling with PrimeNG themes
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Installation
 
 ```bash
-ng generate component component-name
+npm install primeng-jalali-datepicker jalali-moment
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Make sure you have PrimeNG 20+ and Angular 20+ installed.
 
-```bash
-ng generate --help
+## Usage/Examples
+
+Import the module in your Angular module:
+
+```typescript
+// for module-based projects:
+import { JalaliDatepickerModule } from 'primeng-jalali-datepicker';
+
+@NgModule({
+  imports: [
+    JalaliDatepickerModule,
+    // other modules
+  ]
+})
+export class AppModule {}
 ```
 
-## Building
+```typescript
+// for standalone projects:
+import { JalaliDatepickerModule } from 'primeng-jalali-datepicker';
+import { Moment } from 'jalali-moment';
 
-To build the project run:
-
-```bash
-ng build
+@Component({
+  selector: 'app-root',
+  template: `
+    <p-jalali-datepicker [(ngModel)]="selectedDate"></p-jalali-datepicker>
+  `,
+  imports: [
+    JalaliDatepickerModule,
+    // other modules
+  ]
+})
+export class AppComponent {
+  selectedDate: Date | Moment;
+}
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Use it in a template:
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```html
+<p-jalali-datepicker [(ngModel)]="selectedDate"></p-jalali-datepicker>
 ```
 
-## Running end-to-end tests
+or with Reactive Forms:
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```html
+<form [formGroup]="form">
+  <p-jalali-datepicker formControlName="date"></p-jalali-datepicker>
+</form>
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Inputs / Outputs
 
-## Additional Resources
+This component extends all inputs, outputs, and events of PrimeNG DatePicker.
+You can find the official documentation here: [PrimeNG Datepicker Documentation](https://primeng.org/datepicker)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Additionally, this library provides:
+
+| Input |  Type  | Description |
+|:-----|:--------:|:------|
+| isJalali   | boolean | When true, the datepicker works with the Jalali (Persian) calendar using `jalali-moment`. Pass a Moment object if `[isJalali]="true"`, or a `Date` object for Gregorian.
+
+
+## Demo
+
+You can see a live demo [here](https://itismohammadreza.github.io/primeng-jalali-datepicker/)
+
+## License
+
+MIT
