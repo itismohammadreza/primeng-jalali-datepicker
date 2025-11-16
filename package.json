@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build-lib": "ng build primeng-jalali-datepicker && node copy-licenses.js",
-    "deploy-demo": "ng build --project demo --configuration production && gh-pages -d demo/dist/demo"
+    "deploy-demo": "ng build --project demo --configuration production && gh-pages -d dist/demo/browser"
   },
   "prettier": {
     "printWidth": 100,
