@@ -1,6 +1,6 @@
 {
   "name": "primeng-jalali-datepicker",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Jalali (Persian) datepicker based on PrimeNG DatePicker, adapted for Persian calendar",
   "author": "Mohammadreza Shahbazi",
   "license": "MIT",
