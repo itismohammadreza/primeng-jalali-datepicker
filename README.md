@@ -13,7 +13,7 @@ A Jalali (Persian) datepicker for Angular based on PrimeNG DatePicker, fully ada
 ## Installation
 
 ```bash
-npm install primeng-jalali-datepicker jalali-moment
+npm install primeng-jalali-datepicker
 ```
 
 Make sure you have PrimeNG 20+ and Angular 20+ installed.
